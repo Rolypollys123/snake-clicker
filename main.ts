@@ -1,6 +1,10 @@
 namespace SpriteKind {
     export const money = SpriteKind.create()
 }
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    info.changeScoreBy(-100)
+    info.changeScoreBy(1)
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     info.changeScoreBy(1)
     pause(550)
@@ -256,7 +260,6 @@ function make_points (mySprite4: Sprite) {
         ................................
         ................................
         `, SpriteKind.money)
-    info.changeScoreBy(1)
 }
 let mySprite4: Sprite = null
 let mySprite2: Sprite = null
